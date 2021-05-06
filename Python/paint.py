@@ -69,7 +69,7 @@ def triangle(start, end):
     end_fill()
 
 
->>>>>>> c8f19babfe2224b8127e2afed0c3b6e9c1d51713
+
 def tap(x, y):
     "Store starting point or draw shape."
     start = state['start']
