@@ -40,28 +40,16 @@ def circle(start, end):
     down()
     begin_fill()
 
-    for count in range(8):
+    for count in range(50):
         forward(end.x - start.x)
-        left(45)
+        left(7.2)
 
     end_fill()
 
 
 def rectangle(start, end):
     "Draw rectangle from start to end."
-
-
-    up()
-    goto(start.x, start.y)
-    down()
-    begin_fill()
-
-    for count in range(4):
-        forward(end.x - start.x)
-        left(90)
-
-    end_fill()
-
+    pass  # TODO
 
 def triangle(start, end):
     "Draw triangle from start to end."
