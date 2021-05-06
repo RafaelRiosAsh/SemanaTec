@@ -6,7 +6,8 @@ Exercises
 2. Complete circle.
 3. Complete rectangle.
 4. Complete triangle.
-5. Add width parameter.
+
+Author: Aquiles Ensminger:A01781243, Santiago Rodarte:A01025565, Rafael Ríos:A01028722
 
 """
 
@@ -56,7 +57,6 @@ def rectangle(start, end):
 
 def triangle(start, end):
     "Draw triangle from start to end."
-    pass  # TODO
     up()
     goto(start.x, start.y)
     down()
