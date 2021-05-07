@@ -41,7 +41,8 @@ def draw():
 
     if inside(ball):
         goto(ball.x, ball.y)
-        dot(6, 'red')
+	#Changed the color of the ball form red to black
+        dot(6, 'black')
 
     update()
 
