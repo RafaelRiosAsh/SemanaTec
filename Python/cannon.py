@@ -13,6 +13,8 @@ Author: Santiago Rodarte, Aquiles Ensminger, Rafael Ríos
 from random import randrange
 from turtle import *
 from freegames import vector
+import random
+
 state={"score":0}
 writer=Turtle(visible=False)
 tracer(False)
@@ -61,8 +63,11 @@ def move():
 
     # Move the existing targets
     for target in targets:
-        target.x -= 0.5
+        target.x -= 0.8
 
+        gravity = random.random()
+        target.y -= gravity
+        print(gravity)
     # Move the cannon shot
     if inside(ball):
         speed.y -= 0.55
