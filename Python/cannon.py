@@ -14,7 +14,8 @@ from random import randrange
 from turtle import *
 from freegames import vector
 state={"score":0}
-writer= Turtle(visible=False)
+writer=Turtle(visible=False)
+tracer(False)
 ball = vector(-200, -200)
 speed = vector(0, 0)
 targets = []
@@ -77,7 +78,7 @@ def move():
             targets.append(target)
         if abs(target-ball)<=13:    
             state["score"]+=1
-
+    
     draw()
 
     # Detect when a target reaches the left side
@@ -89,9 +90,11 @@ def move():
     ontimer(move, 50)
 
 setup(420, 420, 370, 0)
+writer.penup()
+writer.goto(160,160)
+writer.write(state["score"])
 hideturtle()
 up()
-tracer(False)
 onscreenclick(tap)
 move()
 done()
