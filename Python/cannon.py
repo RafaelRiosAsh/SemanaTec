@@ -7,13 +7,14 @@ Exercises
 3. Apply gravity to the targets.
 4. Change the speed of the ball.
 
-Names: Santiago Rodarte, Aquiles Ensminger, Rafael Ríos
+Author: Santiago Rodarte, Aquiles Ensminger, Rafael Ríos
 """
 
 from random import randrange
 from turtle import *
 from freegames import vector
-
+state={"score":0}
+writer= Turtle(visible=False)
 ball = vector(-200, -200)
 speed = vector(0, 0)
 targets = []
@@ -23,6 +24,7 @@ def tap(x, y):
     if not inside(ball):
         ball.x = -199
         ball.y = -199
+
 	#Changed values in the formulas to make speed greater (from 200 to 300)
         speed.x = (x + 300) / 25 
         speed.y = (y + 300) / 25
@@ -49,6 +51,8 @@ def draw():
 def move():
     "Move ball and targets."
     # Generate a new target at random times
+    writer.undo()
+    writer.write(state["score"]) 
     if randrange(40) == 0:
         y = randrange(-150, 150)
         target = vector(200, y)
@@ -71,6 +75,8 @@ def move():
     for target in dupe:
         if abs(target - ball) > 13:
             targets.append(target)
+        if abs(target-ball)<=13:    
+            state["score"]+=1
 
     draw()
 
