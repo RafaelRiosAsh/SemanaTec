@@ -67,7 +67,6 @@ def move():
 
         gravity = random.random()
         target.y -= gravity
-        print(gravity)
     # Move the cannon shot
     if inside(ball):
         speed.y -= 0.55
