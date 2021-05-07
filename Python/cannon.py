@@ -7,6 +7,7 @@ Exercises
 3. Apply gravity to the targets.
 4. Change the speed of the ball.
 
+Names: Santiago Rodarte, Aquiles Ensminger, Rafael Ríos
 """
 
 from random import randrange
@@ -22,8 +23,9 @@ def tap(x, y):
     if not inside(ball):
         ball.x = -199
         ball.y = -199
-        speed.x = (x + 200) / 25
-        speed.y = (y + 200) / 25
+	#Changed values in the formulas to make speed greater (from 200 to 300)
+        speed.x = (x + 300) / 25 
+        speed.y = (y + 300) / 25
 
 def inside(xy):
     "Return True if xy within screen."
