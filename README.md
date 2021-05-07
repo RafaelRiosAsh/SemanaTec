@@ -7,8 +7,8 @@ Author: Rafael Rios :A01028722, Aquiles Ensiminger :A01781243, Santiago Rodarte:
 Original games code from: http://www.grantjenks.com/docs/freegames/index.html 
 
 Games included (both games were slightly modified to add some features described in the files):
-- Paint
-- Cannon
+- Paint :(added a new color, added functions to generate a circle, triangle, and rectangle)
+- Cannon :(Changed the color of the ball and targets, applied a random gravity vector to each target, modified the speed of the ball, added a score and score counter, changed the force of gravity applied to the ball)
 
 ## Installing the Freegames module
 
