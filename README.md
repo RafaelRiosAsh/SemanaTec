@@ -1,13 +1,13 @@
 # TC1001S-202111
-Sample code for the Computer Tools course challenge
+Test game code modified from [this repository](https://github.com/gilecheverria/TC1001S-202111) during the second "Semana Tec" of the Feb-Jun 2021 semester.
+The purpose of this code is to show our understanding of the core concepts of VCS (Version Control Systems) and python programming.
 
-Author: Gilberto Echeverria
+Author: Rafael Rios :A01028722, Aquiles Ensiminger :A01781243, Santiago Rodarte:A01025565
 
-Original games code from: http://www.grantjenks.com/docs/freegames/index.html
-Games included:
+Original games code from: http://www.grantjenks.com/docs/freegames/index.html 
+
+Games included (both games were slightly modified to add some features described in the files):
 - Paint
-- Snake
-- Pacman
 - Cannon
 
 ## Installing the Freegames module
